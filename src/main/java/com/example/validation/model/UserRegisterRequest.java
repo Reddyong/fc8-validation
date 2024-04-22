@@ -29,7 +29,7 @@ public class UserRegisterRequest {
     @Min(1)
     @Max(100)
     private Integer age;
-    @YearMonth
+    @YearMonth(pattern = "yyyy-MM")
     private String bornDate;
     @Email
     private String email;
